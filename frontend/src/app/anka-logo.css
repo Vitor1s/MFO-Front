@@ -1,0 +1,58 @@
+/* Container da Logo com gradientes precisos */
+.anka-logo-container {
+  width: 163px;
+  height: 52px;
+  top: 59px;
+  left: 78px;
+  border-radius: 39px;
+  opacity: 1;
+  border-width: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Background gradient exato */
+  background: linear-gradient(
+    268.64deg,
+    rgba(16, 16, 16, 0) -45.71%,
+    rgba(211, 162, 55, 0.078) 47.06%,
+    rgba(249, 21, 21, 0.246) 108.7%
+  );
+
+  /* Border com gradiente */
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Pseudo-elemento para a borda com gradiente */
+.anka-logo-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 39px;
+  padding: 1px;
+  background: linear-gradient(
+    96.19deg,
+    #fa4515 65.3%,
+    #d6a207 82.48%,
+    #94290c 107.43%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  z-index: -1;
+}
+
+/* Logo interna */
+.anka-logo-image {
+  width: 95px;
+  height: 42px;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}

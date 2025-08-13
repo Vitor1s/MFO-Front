@@ -1,0 +1,30 @@
+/* Logo personalizada com gradientes */
+.anka-logo {
+  width: 163px;
+  height: 52px;
+  border-radius: 39px;
+  opacity: 1;
+  border-width: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Background gradient */
+  background: linear-gradient(
+    268.64deg,
+    rgba(16, 16, 16, 0) -45.71%,
+    rgba(211, 162, 55, 0.078) 47.06%,
+    rgba(249, 21, 21, 0.246) 108.7%
+  );
+
+  /* Border gradient */
+  border: 1px solid;
+  border-image: linear-gradient(
+      96.19deg,
+      #fa4515 65.3%,
+      #d6a207 82.48%,
+      #94290c 107.43%
+    )
+    1;
+}
